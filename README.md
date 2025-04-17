@@ -8,12 +8,11 @@ This is my personal portfolio website built using **HTML**, **CSS**, and **JavaS
 - Project showcase section
 - Smooth scrolling navigation
 - About Me section
-- Contact section with links to social profiles
 
 ## 💻 Tech Stack
 
-- **HTML5**
-- **CSS3**
-- **JavaScript (Vanilla)**
+- **HTML**
+- **CSS**
+- **JavaScript**
 
 ## 🔗 Live Demo -- https://portfolio-shubham15.netlify.app/
