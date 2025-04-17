@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    color: rgb(213, 212, 212);
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav {
+    background-color: #1f1f1f;
+    display: flex;
+    justify-content: space-between;
+    height: 11vh;
+    margin: 0.5vh;
+    border-radius: 4px;
+    align-items: center;
+
+    @media (max-width: 570px) {
+        flex-direction: column;
+    }
+}
+
+.left {
+    margin-left: 8vw;
+    font-size: 1.6rem;
+
+    @media (max-width: 570px) {
+        margin: 0;
+    }
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2.5vw;
+    margin-right: 2vw;
+}
+
+nav ul li a {
+    cursor: pointer;
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}
+
+.first {
+    display: flex;
+    justify-content: space-around;
+}
+
+.leftsection {
+    width: 75vw;
+    margin: 12vh 3vw;
+    border-radius: 4px;
+    font-size: 3rem;
+    color: rgb(113, 115, 117);
+
+    @media(max-width:1100px) {
+        width: 100vw;
+        font-size: 2rem;
+    }
+}
+
+.rightsection {
+    width: 50vw;
+    height: 50vh;
+    margin: 2vh 1vw;
+    border-radius: 4px;
+}
+
+.rightsection img {
+    width: 50%;
+    height: 80%;
+    margin: 4% 20%;
+
+    @media (max-width: 1100px) {
+        display: none;
+    }
+}
+
+.Welcome {
+    font-size: 1.7rem;
+    margin-top: 4%;
+}
+
+.btn {
+    background-color: #4e4d4d;
+    padding: 12px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: large;
+}
+
+.btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 50px;
+}
+
+.second {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5vh;
+
+    @media (max-width: 1100px) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.leftsection2 {
+    width: 60vw;
+    margin-left: 3vw;
+}
+
+.leftsection2 h2 {
+    margin-top: 20px;
+}
+
+.leftsection2 p {
+    margin-top: 80px;
+    font-size: 1.2rem;
+}
+
+.leftsection2 h3 {
+    margin-top: 100px;
+}
+
+.rightsection2 {
+    width: 35vw;
+    height: 55vh;
+    margin: 12vh 1vw;
+    border-radius: 4px;
+
+    @media (max-width:900px) {
+       display: none;
+    }
+}
+
+.rightsection2 img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border-radius: 4px;
+}
+
+.skills-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.skills-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.skill-card {
+    background-color: #2e2e2e;
+    padding: 20px;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: scale(1.05);
+}
+
+.skill-card p {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.projects-section {
+    background-color: #1f1f1f;
+    color: white;
+    margin: 1%;
+    border-radius: 6px;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.projects-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.projects-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.project-card {
+    background-color: #2e2e2e;
+    border-radius: 12px;
+    padding: 20px;
+    width: 100%;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card h3 {
+    margin: 0 0 10px;
+    font-size: 1.5rem;
+}
+
+.project-card p {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.project-links a {
+    color: #4fc3f7;
+    text-decoration: none;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+.project-links a:hover {
+    text-decoration: underline;
+}
+
+.contact-section {
+    background-color: #1f1f1f;
+    color: white;
+    padding: 42px 20px;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.footer {
+    background-color: #1a1a1a;
+    color: #bbb;
+    text-align: center;
+    padding: 10px 10px;
+    font-size: 0.9rem;
+    border-top: 1px solid #333;
+}
